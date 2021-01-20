@@ -37,8 +37,6 @@
 
     <div class="container border rounded my-3">
 
-
-
         <h2 class="display-5 text-center my-3">Minimum Dataset</h2>
 
         <ul class="nav nav-tabs" id="tabs">
@@ -75,36 +73,25 @@
         <form action="ed_observations.html">
 
             <div class="row">
-                <div class="form-group col-sm-4">
+                <!-- <div class="form-group col-sm-4">
                     <label for="EDdate">Date</label>
                     <input type="date" name="emergencydeptmentdate" class="form-control" id="EDdate">
-                </div>
+                </div> -->
 
-
-
-                <div class="form-group col-sm-8">
-                    <label for="FirstAdmit">Speciality first admitted under</label>
+                <div class="form-group col-sm-6">
+                    <label for="FirstAdmit">Speciality First Admitted Under</label>
                     <select name="FirstAdmitSpecialityId" id="FirstAdmit" class="form-control">
                         <option value=""></option>
                         <option value="Care of the elderly">Care of the elderly</option>
                         <option value="Gastroenterology">Gastroenterology</option>
                         <option value="General medicine">General medicine</option>
                         <option value="General surgery">General surgery</option>
-                        <option value="Gynae">Gynae</option>
+                        <option value="Gynaecology/Obstetrics">Gynae</option>
                         <option value="Other">Other</option>
                         <option value="ND">ND</option>
                     </select>
                 </div>
-
-            </div>
-
-            <div class="row">
-                <div class="form-group col-sm-4">
-                    <label for="regTime">Registered Time</label>
-                    <input type="time" name="registeredtime" class="form-control" id="regTime">
-                </div>
-
-                <div class="col-sm-8">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label for="referredbyid">Referred by</label>
                         <br>
@@ -122,53 +109,65 @@
                                 value="Another Consultant">
                             <label class="form-check-label" for="refRadio3">Another Consultant</label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <!-- <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="referredbyid" id="refRadio4" value="ND">
                             <label class="form-check-label" for="refRadio4">ND</label>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
 
-            <div class="form-group">
-                <label for="transportid">Transport</label>
-                <br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="transportid" id="transportRadio1"
-                        value="Ambulance">
-                    <label class="form-check-label" for="transportRadio1">Ambulance</label>
+            <div class="row">
+                <div class="form-group col-sm-7">
+                    <label for="transportid">Transport</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="transportid" id="transportRadio1"
+                            value="Ambulance">
+                        <label class="form-check-label" for="transportRadio1">Ambulance</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="transportid" id="transportRadio2"
+                            value="Helicopter">
+                        <label class="form-check-label" for="transportRadio2">Helicopter</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="transportid" id="transportRadio3"
+                            value="Other">
+                        <label class="form-check-label" for="transportRadio3">Other</label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="transportid" id="transportRadio2"
-                        value="Helicopter">
-                    <label class="form-check-label" for="transportRadio2">Helicopter</label>
+
+                <div class="form-group col-sm-5">
+                    <label for="regTime">Registered Time</label>
+                    <input type="datetime-local" name="registeredtime" class="form-control" id="regTime">
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="transportid" id="transportRadio3" value="Other">
-                    <label class="form-check-label" for="transportRadio3">Other</label>
-                </div>
+
+
             </div>
+
+
 
 
             <div class="row">
                 <div class="form-group col-sm-4">
                     <label for="triagetime">Triage Time</label>
-                    <input type="time" name="triagetime" class="form-control" id="triagetime">
+                    <input type="datetime-local" name="triagetime" class="form-control" id="triagetime">
                 </div>
 
                 <div class="form-group col-sm-4">
                     <label for="timereffered">Time Referred</label>
-                    <input type="time" name="timereffered" class="form-control" id="timereffered">
+                    <input type="datetime-local" name="timereffered" class="form-control" id="timereffered">
                 </div>
 
                 <div class="form-group col-sm-4">
                     <label for="timeseen">Time Seen</label>
-                    <input type="time" name="timeseen" class="form-control" id="timeseen">
+                    <input type="datetime-local" name="timeseen" class="form-control" id="timeseen">
                 </div>
 
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="consultantreviewinedid">Consultant Review in ED</label>
                 <br>
                 <div class="form-check form-check-inline">
@@ -192,7 +191,7 @@
                     <label for="emergencydepartmenttime">Time Seen By Consultant</label>
                     <input type="time" name="emergencydepartmenttime" class="form-control" id="emergencydepartmenttime">
                 </div>
-            </div>
+            </div> -->
             <button class="btn btn-primary btn-lg mb-3" id="next">Next</button>
 
         </form>
