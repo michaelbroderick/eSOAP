@@ -1,0 +1,42 @@
+label{
+    font-weight:700;
+    font-size: 1.2rem;
+}
+
+.form-check-label{
+
+    font-weight:400;
+
+}
+
+nav{
+    background-color: #cddfd8;
+    font-size: 1.2rem;
+    color:#b4083a;
+
+}
+
+#tabs .nav-link{
+    color:#006857;
+    border-width: 3px;
+}
+
+#next{
+    background-color: #006857;
+    border-color: #006857;
+}
+
+form{
+    margin-top:30px
+}
+
+#sepHead{
+    font-size: 1.4rem;
+    /* padding-bottom: 0.5em;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #222; */
+}
+
+#checkboxes .form-check{
+margin: .75em 0em;
+}
