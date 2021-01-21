@@ -1,0 +1,30 @@
+nav{
+    background-color: #cddfd8;
+    font-size: 1.2rem;
+    color:#b4083a;
+
+}
+
+img{
+    width:100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+h3{
+    text-align: center;
+    color:#006857;
+    text-decoration: none;
+}
+
+h3.module_headings{
+    color:#b4083a;
+}
+
+.hse_green{
+    filter: invert(31%) sepia(24%) saturate(1924%) hue-rotate(125deg) brightness(93%) contrast(101%);
+}
+
+.hse_red{
+    filter: invert(11%) sepia(87%) saturate(4630%) hue-rotate(334deg) brightness(95%) contrast(101%);
+}

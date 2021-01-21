@@ -26,6 +26,11 @@ nav{
     border-color: #006857;
 }
 
+#view_modules{
+    background-color: #b4083a;
+    border-color: #b4083a;
+}
+
 form{
     margin-top:30px
 }
