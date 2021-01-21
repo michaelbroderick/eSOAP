@@ -94,13 +94,15 @@
                     <select name="usid" id="usid" class="form-control">
                         <option value=""></option>
                         <option value="Abdomen">Abdomen</option>
-                        <option value="Abdiment and Pelvis">Abdiment and Pelvis</option>
+                        <option value="Abdiment and Pelvis-Trans Abdominal/Trans Vaginal">Abdiment and Pelvis-Trans
+                            Abdominal/Trans Vaginal</option>
                         <option value="Breast">Breast</option>
-                        <option value="Pelvis">Pelvis</option>
+                        <option value="Pelvic Trans Abdominal/Trans Vaginal">Pelvic Trans Abdominal/Trans Vaginal
+                        </option>
                         <option value="Renal (kidney both)">Renal (kidney both)</option>
-                        <option value="Trans Abdominal">Trans Abdominal</option>
-                        <option value="Trans Vaginal">Trans Vaginal</option>
-                        <option value="ND">ND</option>
+                        <!-- <option value="Trans Abdominal">Trans Abdominal</option>
+                        <option value="Trans Vaginal">Trans Vaginal</option> -->
+                        <option value="Not Requested">Not Requested</option>
                     </select>
                 </div>
             </div>
@@ -129,13 +131,14 @@
                     <label for="ctid">CT</label>
                     <select name="ctid" id="ctid" class="form-control">
                         <option value=""></option>
-                        <option value="Abdo & Pelvis">Abdo & Pelvis</option>
+                        <option value="Abdomen">Abdomen</option>
+                        <option value="Abdomen & Pelvis">Abdomen & Pelvis</option>
                         <option value="CT Angio">CT Angio</option>
                         <option value="KUB">KUB</option>
                         <option value="TAP">TAP</option>
                         <option value="Thorax">Thorax</option>
                         <option value="Urogram">Urogram</option>
-                        <option value="ND">ND</option>
+                        <option value="Not Requested">Not Requested</option>
                     </select>
                 </div>
             </div>
@@ -164,11 +167,10 @@
                     <label for="mriid">MRI</label>
                     <select name="mriid" id="mriid" class="form-control">
                         <option value=""></option>
-                        <option value="Abdo">Abdo</option>
+                        <option value="Abdomen">Abdomen</option>
                         <option value="MRCP">MRCP</option>
                         <option value="Pelvis">Pelvis</option>
                         <option value="Not Requested">Not Requested</option>
-                        <option value="ND">ND</option>
                     </select>
                 </div>
             </div>
@@ -193,6 +195,16 @@
 
             </div>
 
+            <div class="row">
+                <div class="form-group col-sm-8">
+                    <label for="otherimageid">Other Image</label>
+                    <select name="otherimageid" id="otherimageid" class="form-control">
+                        <option value="ND">ND</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="form-group col-sm-6">

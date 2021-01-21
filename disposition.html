@@ -36,9 +36,6 @@
     </nav>
 
     <div class="container border rounded my-3">
-
-
-
         <h2 class="display-5 text-center my-3">Minimum Dataset</h2>
 
         <ul class="nav nav-tabs" id="tabs">
@@ -84,15 +81,14 @@
                         <option value="Emergency Department Trolley">Emergency Department Trolley</option>
                         <option value="HDU">HDU</option>
                         <option value="ICU">ICU</option>
+                        <option value="Overflow Area">Overflow Area</option>
                         <option value="Theatre">Theatre</option>
-                        <option value="Transfer">Transfer</option>
                         <option value="Ward">Ward</option>
-                        <option value="ND">ND</option>
                     </select>
                 </div>
 
                 <div class="form-group col-sm-4">
-                    <label for="dispositiondatetime">Date Time</label>
+                    <label for="dispositiondatetime">Move Time</label>
                     <input type="datetime-local" name="dispositiondatetime" class="form-control"
                         id="dispositiondatetime">
                 </div>
@@ -102,7 +98,7 @@
 
             <div class="row">
 
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-8">
                     <label for="antibioticsrecordedid">Antibiotics</label>
                     <br>
                     <div class="form-check form-check-inline">
@@ -115,11 +111,12 @@
                             value="No">
                         <label class="form-check-label" for="antibioticsRadio2">No</label>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="antibioticsrecordedid" id="antibioticsRadio3"
-                            value="ND">
-                        <label class="form-check-label" for="antibioticsRadio3">ND</label>
-                    </div>
+                </div>
+
+                <div class="form-group col-sm-4">
+                    <label for="antibioticsrecordedtime">Antibiotics Time</label>
+                    <input type="datetime-local" name="antibioticsrecordedtime" class="form-control"
+                        id="antibioticsrecordedtime">
                 </div>
             </div>
 
@@ -137,11 +134,7 @@
                             value="No">
                         <label class="form-check-label" for="surgeryRadio2">No</label>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="dispositionsurgrecordedid" id="surgeryRadio3"
-                            value="ND">
-                        <label class="form-check-label" for="surgeryRadio3">ND</label>
-                    </div>
+
                 </div>
             </div>
 
