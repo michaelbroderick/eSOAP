@@ -45,3 +45,7 @@ form{
 #checkboxes .form-check{
 margin: .75em 0em;
 }
+
+.input_visibility{
+    display:none;
+}
