@@ -21,12 +21,17 @@ nav{
     border-width: 3px;
 }
 
-#next{
+.next{
     background-color: #006857;
     border-color: #006857;
 }
 
-#view_modules{
+.previous{
+    background-color: #006857;
+    border-color: #006857;
+}
+
+.view_modules{
     background-color: #b4083a;
     border-color: #b4083a;
 }
@@ -48,4 +53,32 @@ margin: .75em 0em;
 
 .input_visibility{
     display:none;
+}
+
+.next:hover{
+    background-color: white;
+    color: #006857;
+    border-color: #006857;
+    
+}
+
+
+
+.previous:hover{
+    background-color: white;
+    color: #006857;
+    border-color: #006857;
+    
+}
+
+.view_modules:hover{
+    background-color: white;
+    color: #b4083a;
+    border-color: #b4083a;
+    
+}
+
+.next:active{
+    background-color: #006857;
+    border-color: #006857;
 }

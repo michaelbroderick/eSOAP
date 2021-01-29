@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Tests</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="form_styles.css">
+</head>
+
+<body>
+
+    <nav id=mainNavBar class="navbar navbar-light navbar-expand-md py-0">
+
+        <!-- <a href="" class="navbar-brand">CANDY</a> -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"><span class="navbar-toggler-icon"
+                aria-label="Toggle Navigation"></span></button>
+
+        <div class="collapse navbar-collapse" id="navLinks">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="landing.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signin.html" class="nav-link">SIGN OUT</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="container border rounded my-3">
+
+
+        <h2 class="display-5 text-center my-3">Small Bowel Obstruction Module</h2>
+
+        <ul class="nav nav-tabs" id="tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="sbo_admission_data.html">Admission Data</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sbo_baseline_phys.html">Baseline Physiology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="sbo_diagnostic_tests.html">Diagnostic Tests</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sbo_aetiology.html">Aetiology & Management</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sbo_care_episode.html">Care episode data</a>
+            </li>
+
+
+
+        </ul>
+
+        <form action="sbo_aetiology.html">
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <label for="sbo_abdoXray">Abdominal X-ray performed</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sbo_abdoXray" id="abdoXrRadio1" value="Yes">
+                        <label class="form-check-label" for="abdoXrRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sbo_abdoXray" id="abdoXrRadio2" value="No">
+                        <label class="form-check-label" for="abdoXrRadio2">No</label>
+                    </div>
+                </div>
+
+                <!-- needs to be visible only when yes is selected -->
+                <div class="form-group col-sm-6 input_visibility" id="abdoDT">
+                    <label for="sbo_abdoXray_date">Date and Time of X-ray</label>
+                    <input type="datetime-local" name="sbo_abdoXray_date" class="form-control" id="sbo_abdoXray_date">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <label for="sbo_ct">CT scan performed</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sbo_ct" id="ctRadio1" value="Yes">
+                        <label class="form-check-label" for="ctRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sbo_ct" id="ctRadio2" value="No">
+                        <label class="form-check-label" for="ctRadio2">No</label>
+                    </div>
+                </div>
+
+                <!-- needs to be visible only when yes is selected -->
+                <div class="form-group col-sm-4 input_visibility" id="ctDT">
+                    <label for="sbo_ct_date">Date and Time of CT</label>
+                    <input type="datetime-local" name="sbo_ct_date" class="form-control" id="sbo_ct_date">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-sm-6">
+                    <label for="sbo_contrast_agent">Did the patient receive water-soluble contrast agent (gastrografin)
+                        apart from when undergoing a CT scan</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sbo_contrast_agent" id="contrastRadio1"
+                            value="Yes">
+                        <label class="form-check-label" for="contrastRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sbo_contrast_agent" id="contrastRadio2"
+                            value="No">
+                        <label class="form-check-label" for="contrastRadio2">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-4 input_visibility" id="contrastDT">
+                    <label for="sbo_contrast_date">Date and Time</label>
+                    <input type="datetime-local" name="sbo_contrast_date" class="form-control" id="sbo_contrast_date">
+                </div>
+
+            </div>
+
+
+
+            <button class="btn btn-primary btn-lg my-3 mx-1 next" id="nxt">Next</button>
+            <a href="sbo_baseline_phys.html"><button type="button" class="btn btn-primary btn-lg my-3 mx-1 previous"
+                    id="prev">Previous</button></a>
+            <a href="modules.html"><button type="button" class="btn btn-primary btn-lg my-3 mx-1 view_modules"
+                    id="view_mod">View
+                    Modules</button></a>
+
+        </form>
+
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <script src='sbo_diagnostic_test.js'></script>
+
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 const otherComplaintBtn = document.querySelector('#presentingCheckR4_9');
 
+
 const otherComplaintBox = document.querySelector('#other_complaint_area');
 
 const toggleOther = () => {
@@ -7,3 +8,4 @@ const toggleOther = () => {
 }
 
 otherComplaintBtn.addEventListener('click', toggleOther);
+
