@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedure</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="form_styles.css">
+</head>
+
+<body>
+
+    <nav id=mainNavBar class="navbar navbar-light navbar-expand-md py-0">
+
+        <!-- <a href="" class="navbar-brand">CANDY</a> -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"><span class="navbar-toggler-icon"
+                aria-label="Toggle Navigation"></span></button>
+
+        <div class="collapse navbar-collapse" id="navLinks">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="landing.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signin.html" class="nav-link">SIGN OUT</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="container border rounded my-3">
+
+
+        <h2 class="display-5 text-center my-3">RUQ Pain and Cholecystitis Module</h2>
+
+        <ul class="nav nav-tabs" id="tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="ruq_risk_strat.html">Risk Stratification</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ruq_bloods.html">Bloods</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ruq_clinical_exam.html">Clinical Examination</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="ruq_procedure.html">Procedure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ruq_surgery.html">Surgery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ruq_post_op_risk_strat.html">Post-Op Risk Stratification</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ruq_post_op.html">Post-Operative</a>
+            </li>
+        </ul>
+
+        <form action="ruq_surgery.html">
+
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="ercpid">ERCP</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="ercpid" id="ercpRadio1" value="Yes">
+                        <label class="form-check-label" for="ercpRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="ercpid" id="ercpRadio2" value="No">
+                        <label class="form-check-label" for="ercpRadio2">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="ercpid" id="ercpRadio3" value="ND">
+                        <label class="form-check-label" for="ercpRadio3">ND</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" id="finding_area">
+                <label for="ercpfindings">ERCP Findings</label>
+                <!-- <input type="text" name="findings" class="form-control" id="findings"> -->
+                <textarea name="ercpfindings" id="ercpfindings" class="form-control" cols="30" rows="4"></textarea>
+            </div>
+
+
+            <button class="btn btn-primary btn-lg my-3 mx-1 next" id="nxt">Next</button>
+            <a href="ruq_clinical_exam.html"><button type="button" class="btn btn-primary btn-lg my-3 mx-1 previous"
+                    id="prev">Previous</button></a>
+            <a href="modules.html"><button type="button" class="btn btn-primary btn-lg my-3 mx-1 view_modules"
+                    id="view_mod">View
+                    Modules</button></a>
+
+        </form>
+
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -28,3 +28,15 @@ h3.module_headings{
 .hse_red{
     filter: invert(11%) sepia(87%) saturate(4630%) hue-rotate(334deg) brightness(95%) contrast(101%);
 }
+
+.form_div{
+    transition: 200ms;
+}
+
+a:hover{
+    text-decoration:none;
+} 
+
+.form_div:hover{
+    transform: scale(1.05);
+}
