@@ -1,0 +1,14 @@
+checkDate("#cxrdatetime", "#cxrDiv");
+checkDate("#pfadatetime", "#pfaDiv");
+checkDate("#usbookeddatetime", "#usbookedDiv");
+checkDate("#usperformeddatetime", "#usperformedDiv");
+checkDate("#usreporteddatetime", "#usreportedDiv");
+checkDate("#ctbookeddatetime", "#ctbookedDiv");
+checkDate("#ctperformeddatetime", "#ctperformedDiv");
+checkDate("#ctreporteddatetime", "#ctreportedDiv");
+checkDate("#mribookeddatetime", "#mribookedDiv");
+checkDate("#mriperformeddatetime", "#mriperformedDiv");
+checkDate("#mrireporteddatetime", "#mrireportedDiv");
+checkDate("#otherimagebookeddatetime", "#otherimagebookedDiv");
+checkDate("#otherimageperformeddatetime", "#otherimageperformedDiv");
+checkDate("#otherimagereporteddatetime", "#otherimagereportedDiv");

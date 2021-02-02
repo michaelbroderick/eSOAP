@@ -1,0 +1,1 @@
+toggleSelect("#presentconsultantid", "Locum", "#showLocum")
