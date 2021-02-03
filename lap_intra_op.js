@@ -1,1 +1,1 @@
-toggleSelect("#presentconsultantid", "Locum", "#showLocum")
+toggleSelect("#presentconsultantid", "#showLocum", ["Locum"])

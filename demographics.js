@@ -5,4 +5,4 @@ const toggleOther = () => {
 }
 otherComplaintBtn.addEventListener('click', toggleOther);
 
-checkDate("#admissiondate", "#admissiondateDiv")
+checkDate()
