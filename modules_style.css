@@ -19,6 +19,7 @@ h3{
 
 h3.module_headings{
     color:#b4083a;
+    color:#7e7e7e;
 }
 
 .hse_green{
@@ -29,6 +30,10 @@ h3.module_headings{
     filter: invert(11%) sepia(87%) saturate(4630%) hue-rotate(334deg) brightness(95%) contrast(101%);
 }
 
+.hse_grey{
+    filter: invert(59%) sepia(2%) saturate(16%) hue-rotate(350deg) brightness(83%) contrast(81%);
+}
+
 .form_div{
     transition: 200ms;
 }
@@ -37,6 +42,12 @@ a:hover{
     text-decoration:none;
 } 
 
-.form_div:hover{
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
+.form_div_enabled:hover{
     transform: scale(1.05);
 }
+

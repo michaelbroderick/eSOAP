@@ -41,7 +41,7 @@
 
         <ul class="nav nav-tabs" id="tabs">
             <li class="nav-item">
-                <a class="nav-link" href="demographics.html">Demographics</a>
+                <a class="nav-link" href="demographic.html">Demographics</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="emergency_dep.html">Emergency Department</a>
@@ -193,7 +193,7 @@
                 </div>
             </div> -->
             <button class="btn btn-primary btn-lg my-3 mx-1 next" id="nxt">Next</button>
-            <a href="demographics.html"><button type="button" class="btn btn-primary btn-lg my-3 mx-1 previous"
+            <a href="demographic.html"><button type="button" class="btn btn-primary btn-lg my-3 mx-1 previous"
                     id="prev">Previous</button></a>
             <a href="modules.html"><button type="button" class="btn btn-primary btn-lg my-3 mx-1 view_modules"
                     id="view_mod">View
@@ -216,7 +216,11 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="form_functions.js"></script>
-    <script>checkDate();</script>
+    <script>
+        populate("input, select");
+        setListener("input, select");
+        addDateCheck();
+    </script>
 
 
 </body>

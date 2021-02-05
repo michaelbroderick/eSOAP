@@ -43,7 +43,7 @@
 
         <ul class="nav nav-tabs" id="tabs">
             <li class="nav-item">
-                <a class="nav-link" href="demographics.html">Demographics</a>
+                <a class="nav-link" href="demographic.html">Demographics</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="emergency_dep.html">Emergency Department</a>
@@ -125,6 +125,133 @@
                 </div> -->
 
             </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="procedurecategory">Select Procedure Category</label>
+                        <select name="procedurecategory" id="procedurecategory" class="form-control">
+                            <option value=""></option>
+                            <option value="abscesses">Abscesses</option>
+                            <option value="appendectomy">Appendectomy</option>
+                            <option value="cholecystectomy">Cholecystectomy</option>
+                            <option value="hernia">Hernia</option>
+                            <option value="pepticulcer">Peptic</option>
+                            <option value="colorectalprocedures">Colorectal Procedures</option>
+                            <option value="lefthemicolectomy">Left Hemicolectomy</option>
+                            <option value="subtotalpartialcolectomy">Subtotal/Partial Colectomy</option>
+                            <option value="totalcolectomy">Total Colectomy</option>
+                            <option value="sigmoidectomy">Sigmoidectomy</option>
+                            <option value="anteriorresection">Anterior Resection/Proctosigmoidectomy/Proctocolectomy
+                            </option>
+                            <option value="proctocolectomy">Proctocolectomy</option>
+                            <option value="openabdomen">Open Abdomen</option>
+                            <option value="repairoffistula">Repair of Fistula</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group input_visibility" id="appendectomy">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="abscesses">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="cholecystectomy">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="hernia">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="pepticulcer">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="colorectalprocedures">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="lefthemicolectomy">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="subtotalpartialcolectomy">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="totalcolectomy">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="sigmoidectomy">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="anteriorresection">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="proctocolectomy">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="openabdomen">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+            <div class="form-group input_visibility" id="repairoffistula">
+                <label for="procedureid">Procedure</label>
+                <select name="procedureid" id="procedureid" class="form-control">
+                    <option value=""></option>
+
+                </select>
+            </div>
+
+
 
             <div class="form-group">
                 <label for="procedureid">Procedure</label>
@@ -539,7 +666,11 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="form_functions.js"></script>
-    <script>checkDate();</script>
+    <script>
+        populate("input, select");
+        setListener("input, select");
+        addDateCheck();
+    </script>
 
 </body>
 

@@ -42,7 +42,7 @@
 
         <ul class="nav nav-tabs" id="tabs">
             <li class="nav-item">
-                <a class="nav-link" href="demographics.html">Demographics</a>
+                <a class="nav-link" href="demographic.html">Demographics</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="emergency_dep.html">Emergency Department</a>
@@ -377,7 +377,12 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="form_functions.js"></script>
-    <script>checkDate();</script>
+    <script src="form_functions.js"></script>
+    <script>
+        populate("input, select");
+        setListener("input, select");
+        addDateCheck();
+    </script>
 
 </body>
 
